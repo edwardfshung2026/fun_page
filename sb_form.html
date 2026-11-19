@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Member Form | SHARBUCKZ Style</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>New Member Form</h1>
+  <hr>
+
+  <nav aria-label="Main navigation">
+    <a href="sb_style.html">SHARBUCKZ Style</a>
+    <a href="sb_table.html">Time Table</a>
+  </nav>
+
+  <main class="form-main">
+    <h2>Join our community</h2>
+    <p>Please complete the details below to register as a new member.</p>
+
+    <form class="member-form" action="#" method="get">
+      <div class="form-field">
+        <label for="member-name">Name</label>
+        <input id="member-name" name="name" type="text" autocomplete="name" required>
+      </div>
+
+      <fieldset class="form-field gender-field">
+        <legend>Gender</legend>
+        <label class="radio-option">
+          <input name="gender" type="radio" value="female" required>
+          Female
+        </label>
+        <label class="radio-option">
+          <input name="gender" type="radio" value="male">
+          Male
+        </label>
+        <label class="radio-option">
+          <input name="gender" type="radio" value="prefer-not-to-say">
+          Prefer not to say
+        </label>
+      </fieldset>
+
+      <div class="form-field">
+        <label for="date-of-birth">Day of birth</label>
+        <input id="date-of-birth" name="date-of-birth" type="date" autocomplete="bday" required>
+      </div>
+
+      <div class="form-field">
+        <label for="address">Address</label>
+        <textarea id="address" name="address" rows="3" autocomplete="street-address" required></textarea>
+      </div>
+
+      <div class="form-field">
+        <label for="mobile">Mobile</label>
+        <input id="mobile" name="mobile" type="tel" autocomplete="tel" required>
+      </div>
+
+      <button type="submit">Submit registration</button>
+    </form>
+  </main>
+</body>
+
+</html>

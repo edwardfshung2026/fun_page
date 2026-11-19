@@ -8,7 +8,7 @@ body {
   background-color: rgb(109, 144, 237);
   text-align: justify;
   font-family: "Bellefair", serif;
-  font-weight: 400;
+  font-weight: 600;
   font-style: normal;
 
 }
@@ -24,4 +24,192 @@ h2 {
 
 h1 {
   text-align: center;
+}
+
+nav {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+nav a {
+  color: red;
+  font-family: "Pinyon Script", cursive;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+body {
+  min-height: 100vh;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+main {
+  max-width: 760px;
+  margin: 32px auto;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(18, 58, 38, 0.18);
+}
+
+.time-table {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  overflow: hidden;
+  border: 2px solid darkgreen;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.96);
+  color: rgb(36, 64, 49);
+  text-align: center;
+  box-shadow: 0 8px 18px rgba(36, 64, 49, 0.12);
+}
+
+.time-table th,
+.time-table td {
+  width: 25%;
+  height: 78px;
+  border: 1px solid rgba(0, 100, 0, 0.45);
+  padding: 12px;
+}
+
+.time-table thead th {
+  color: red;
+  background: linear-gradient(135deg, rgb(220, 231, 187), rgb(244, 238, 187));
+  font-family: "Pinyon Script", cursive;
+  font-size: 28px;
+}
+
+.time-table tbody th {
+  color: red;
+  background-color: rgb(220, 231, 187);
+  font-family: "Pinyon Script", cursive;
+  font-size: 24px;
+}
+
+.time-table tbody tr:nth-child(even) td {
+  background-color: rgba(220, 231, 187, 0.38);
+}
+
+.time-table td {
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.time-table td:hover {
+  background-color: rgb(244, 238, 187);
+  transform: scale(1.02);
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 12px;
+  }
+
+  main {
+    padding: 12px;
+  }
+
+  .time-table th,
+  .time-table td {
+    height: 60px;
+    padding: 6px;
+  }
+
+  .time-table thead th {
+    font-size: 22px;
+  }
+
+  .time-table tbody th {
+    font-size: 20px;
+  }
+}
+
+.form-main {
+  max-width: 560px;
+  color: rgb(36, 64, 49);
+  text-align: left;
+}
+
+.form-main h2 {
+  margin-bottom: 4px;
+}
+
+.member-form {
+  display: grid;
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.form-field {
+  display: grid;
+  gap: 7px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.form-field > label,
+.gender-field legend {
+  color: rgb(36, 64, 49);
+  font-size: 18px;
+}
+
+.member-form input[type="text"],
+.member-form input[type="date"],
+.member-form input[type="tel"],
+.member-form textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid rgba(0, 100, 0, 0.5);
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.96);
+  color: rgb(36, 64, 49);
+  font: inherit;
+}
+
+.member-form textarea {
+  resize: vertical;
+}
+
+.member-form input:focus,
+.member-form textarea:focus {
+  outline: 3px solid rgba(0, 100, 0, 0.2);
+  border-color: darkgreen;
+}
+
+.gender-field {
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px 14px;
+}
+
+.gender-field legend {
+  grid-column: 1 / -1;
+  margin-bottom: 10px;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: rgb(36, 64, 49);
+}
+
+.member-form button {
+  justify-self: start;
+  padding: 11px 20px;
+  border: 0;
+  border-radius: 999px;
+  background-color: darkgreen;
+  color: white;
+  font: inherit;
+  cursor: pointer;
+}
+
+.member-form button:hover,
+.member-form button:focus {
+  background-color: rgb(36, 64, 49);
 }
